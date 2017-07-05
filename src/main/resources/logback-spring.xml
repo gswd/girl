@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <property name="LOG_FILE" value="logss"/>
+
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+
+
+    <logger name="com.imooc" level="info"/>
+    <springProfile name="dev">
+        <logger name="com.imooc" level="debug"/>
+    </springProfile>
+    <springProfile name="prod">
+        <logger name="com.imooc" level="warn"/>
+    </springProfile>
+</configuration>
