@@ -27,9 +27,9 @@ public class HelloController {
 
         logger.debug("hello Controller [debug]");
         logger.info("hello Controller [info]");
-        if (true) {
-            throw new RuntimeException("自定义运行时异常");
-        }
+        //if (true) {
+        //    throw new RuntimeException("自定义运行时异常");
+        //}
         return girlProperties.getCupSize();
     }
 
